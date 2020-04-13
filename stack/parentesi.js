@@ -87,7 +87,7 @@ function balancep(exp) {
       }
     }
 
-  if (stack.length < 1) console.log("non ci sono errori nelle parentesi");  \\stack vuoto, no problem
+  if (stack.length < 1) console.log("Tutte le parentesi aperte sono state chiuse");  \\stack vuoto, no problem
   else
     for (let i = 0; i < stack.length - 1; i = i + 2)  \\stack non vuoto, lo scorro di 2 in 2 poichè contiene anche gli indici
       console.log(
