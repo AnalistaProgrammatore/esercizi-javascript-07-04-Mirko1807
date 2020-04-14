@@ -39,7 +39,7 @@ class Dequeue {
     }
     let result = this.items[this.backcount - 1];
     delete this.items[this.backcount - 1];
-    this.back--;
+    this.backcount--;
     return result;
   }
 
