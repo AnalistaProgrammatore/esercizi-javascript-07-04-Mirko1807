@@ -37,7 +37,7 @@ class Dequeue {
     if (this.isEmpty()) {
       return undefined;
     }
-    let result = this.items[this.nackcount - 1];
+    let result = this.items[this.backcount - 1];
     delete this.items[this.backcount - 1];
     this.back--;
     return result;
