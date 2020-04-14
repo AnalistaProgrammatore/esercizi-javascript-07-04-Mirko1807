@@ -58,17 +58,17 @@ class Dequeue {
   }
 
   isEmpty() {
-    return this.count - this.lowestCount == 0;
+    return this.backcount - this.frontCount == 0;
   }
 
   size() {
-    return this.count - this.lowestCount;
+    return this.backcount - this.frontCount;
   }
 
   clear() {
     this.items = {};
-    this.count = 0;
-    this.lowestCount = 0;
+    this.backcount = 0;
+    this.frontCount = 0;
   }
 
   toString() {
